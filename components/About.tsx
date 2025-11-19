@@ -49,7 +49,7 @@ export const About: React.FC = () => {
             {/* Single Hero Image */}
             <div className="relative group">
                 <img
-                    src="/jack-collage.png?v=3"
+                    src="/jack-collage-new.png"
                     alt="Jack Roberts"
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
