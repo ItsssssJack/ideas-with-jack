@@ -3,7 +3,9 @@ import { Check, ArrowUpRight, Users, Building2, BarChart3, Clock, DollarSign, Re
 
 export const Ecosystem: React.FC = () => {
   return (
-    <section id="ecosystem" className="py-24 bg-background">
+    <section id="ecosystem" className="py-24 bg-background relative">
+      {/* Soft gradient overlay for smooth transition */}
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-background to-transparent pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
@@ -118,6 +120,16 @@ export const Ecosystem: React.FC = () => {
               className="absolute top-0 left-0 w-full h-full"
               title="AI Automations Overview"
             ></iframe>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center mt-8">
+            <a
+              href="#newsletter"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-slate-200 text-slate-900 font-bold rounded-xl transition-all shadow-lg hover:scale-105"
+            >
+              Join Community <ArrowUpRight size={20} />
+            </a>
           </div>
         </div>
 

@@ -24,7 +24,7 @@ export const Features: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-surface border-y border-white/5 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-background via-surface to-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
