@@ -53,9 +53,14 @@ export const Ecosystem: React.FC = () => {
               ))}
             </ul>
 
-            <button className="w-full py-4 rounded-xl bg-white hover:bg-slate-200 text-slate-900 font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-white/5 group-hover:scale-[1.02]">
+            <a
+              href="https://www.skool.com/aiautomationsbyjack"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 rounded-xl bg-white hover:bg-slate-200 text-slate-900 font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-white/5 group-hover:scale-[1.02]"
+            >
               Join Community <ArrowUpRight size={20} />
-            </button>
+            </a>
           </div>
 
           {/* Agency Card - Right */}
@@ -125,7 +130,9 @@ export const Ecosystem: React.FC = () => {
           {/* CTA Button */}
           <div className="text-center mt-8">
             <a
-              href="#newsletter"
+              href="https://www.skool.com/aiautomationsbyjack"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-slate-200 text-slate-900 font-bold rounded-xl transition-all shadow-lg hover:scale-105"
             >
               Join Community <ArrowUpRight size={20} />
