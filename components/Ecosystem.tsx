@@ -91,9 +91,14 @@ export const Ecosystem: React.FC = () => {
               ))}
             </ul>
 
-            <button className="w-full py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-purple-900/20 group-hover:scale-[1.02]">
+            <a
+              href="https://cal.com/jackroberts/teddy-15?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-purple-900/20 group-hover:scale-[1.02]"
+            >
               Let's Chat <ArrowUpRight size={20} />
-            </button>
+            </a>
           </div>
 
         </div>

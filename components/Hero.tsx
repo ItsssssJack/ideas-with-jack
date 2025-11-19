@@ -76,12 +76,6 @@ export const Hero: React.FC = () => {
             <form onSubmit={handleSubmit} className="relative group">
               <div className="flex flex-col sm:flex-row gap-3">
                 <div className="relative flex-1">
-                  {/* Mobile-only visual indicator */}
-                  <div className="absolute -top-8 left-0 sm:hidden text-xs font-semibold text-yellow-400 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
-                    Start here
-                  </div>
-
                   <input
                     type="email"
                     value={email}
