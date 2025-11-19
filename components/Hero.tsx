@@ -75,19 +75,27 @@ export const Hero: React.FC = () => {
           ) : (
             <form onSubmit={handleSubmit} className="relative group">
               <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="flex-1 h-14 px-6 rounded-full border border-white/10 bg-surface/50 text-white text-[16px] placeholder:text-slate-500 focus:border-yellow-500/50 focus:ring-2 focus:ring-yellow-500/20 transition-all outline-none shadow-lg"
-                  autoComplete="email"
-                  required
-                />
+                <div className="relative flex-1">
+                  {/* Mobile-only visual indicator */}
+                  <div className="absolute -top-8 left-0 sm:hidden text-xs font-semibold text-yellow-400 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
+                    Start here
+                  </div>
+
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email address"
+                    className="w-full h-16 sm:h-14 px-6 rounded-full border-2 border-yellow-500/30 bg-white/[0.08] backdrop-blur-xl text-white text-[17px] sm:text-[16px] font-medium placeholder:text-slate-400 placeholder:font-normal focus:border-yellow-500 focus:ring-4 focus:ring-yellow-500/30 transition-all duration-200 outline-none shadow-[0_0_20px_rgba(234,179,8,0.15)] focus:shadow-[0_0_30px_rgba(234,179,8,0.3)] hover:bg-white/[0.12] active:scale-[0.99]"
+                    autoComplete="email"
+                    required
+                  />
+                </div>
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="h-14 px-8 bg-yellow-500 text-black rounded-full font-bold text-base transition-all hover:scale-105 hover:bg-yellow-400 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 min-w-[160px]"
+                  className="h-16 sm:h-14 px-10 sm:px-8 bg-yellow-500 text-black rounded-full font-bold text-base transition-all hover:scale-105 hover:bg-yellow-400 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 min-w-[160px]"
                 >
                   {status === 'loading' ? (
                     <Loader2 className="animate-spin w-5 h-5" />
