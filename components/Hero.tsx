@@ -37,10 +37,10 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="newsletter" className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden min-h-screen flex items-center">
-      {/* Background Decor */}
+      {/* Background Decor - Animated */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-brand-900/20 rounded-full blur-[100px] opacity-40" />
-        <div className="absolute top-[20%] right-[-10%] w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[100px] opacity-30" />
+        <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-brand-900/20 rounded-full blur-[100px] opacity-40 animate-[pulse_8s_ease-in-out_infinite]" />
+        <div className="absolute top-[20%] right-[-10%] w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[100px] opacity-30 animate-[pulse_6s_ease-in-out_infinite_1s]" />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center w-full">
@@ -81,7 +81,7 @@ export const Hero: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address"
-                    className="w-full h-16 sm:h-14 px-6 rounded-full border-2 border-yellow-500/30 bg-white/[0.08] backdrop-blur-xl text-white text-[17px] sm:text-[16px] font-medium placeholder:text-slate-400 placeholder:font-normal focus:border-yellow-500 focus:ring-4 focus:ring-yellow-500/30 transition-all duration-200 outline-none shadow-[0_0_20px_rgba(234,179,8,0.15)] focus:shadow-[0_0_30px_rgba(234,179,8,0.3)] hover:bg-white/[0.12] active:scale-[0.99]"
+                    className="w-full h-16 sm:h-14 px-6 rounded-full border-2 border-yellow-500/30 bg-white/[0.08] backdrop-blur-xl text-white text-[17px] sm:text-[16px] font-medium placeholder:text-slate-400 placeholder:font-normal focus:border-yellow-500 focus:ring-4 focus:ring-yellow-500/30 transition-all duration-200 outline-none shadow-[0_0_20px_rgba(234,179,8,0.15)] focus:shadow-[0_0_30px_rgba(234,179,8,0.3)] hover:bg-white/[0.12] active:scale-[0.99] animate-[pulse_4s_ease-in-out_infinite]"
                     autoComplete="email"
                     required
                   />
@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="h-16 sm:h-14 px-10 sm:px-8 bg-yellow-500 text-black rounded-full font-bold text-base transition-all hover:scale-105 hover:bg-yellow-400 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 min-w-[160px]"
+                  className="h-16 sm:h-14 px-10 sm:px-8 bg-yellow-500 text-black rounded-full font-bold text-base transition-all hover:scale-105 hover:bg-yellow-400 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 min-w-[160px] animate-[pulse_3s_ease-in-out_infinite]"
                 >
                   {status === 'loading' ? (
                     <Loader2 className="animate-spin w-5 h-5" />
