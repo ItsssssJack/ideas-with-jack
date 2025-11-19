@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
-                  className="flex-1 h-14 px-6 rounded-full border border-white/10 bg-surface/50 text-white placeholder:text-slate-500 focus:border-yellow-500/50 focus:ring-2 focus:ring-yellow-500/20 transition-all outline-none shadow-lg"
+                  className="flex-1 h-14 px-6 rounded-full border border-white/10 bg-surface/50 text-white text-base placeholder:text-slate-500 focus:border-yellow-500/50 focus:ring-2 focus:ring-yellow-500/20 transition-all outline-none shadow-lg"
                   required
                 />
                 <button
