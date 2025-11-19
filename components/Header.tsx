@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap, Mail } from 'lucide-react';
+import { Menu, X, Zap } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,27 +37,21 @@ export const Header: React.FC = () => {
             </span>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* CTA & Mobile Toggle */}
+          {/* Desktop Nav - Aligned Right */}
           <div className="flex items-center gap-4">
-            <a
-              href="#newsletter"
-              className="hidden md:inline-flex h-10 px-6 items-center justify-center rounded-full bg-white text-slate-900 text-sm font-bold transition-all hover:bg-slate-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900 gap-2"
-            >
-              <Mail size={16} /> Subscribe
-            </a>
+            <nav className="hidden md:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+
+            {/* Mobile Toggle */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 text-slate-400 hover:text-white"
@@ -82,13 +76,6 @@ export const Header: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#newsletter"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full h-12 flex items-center justify-center rounded-lg bg-white text-slate-900 font-bold"
-            >
-              Subscribe Now
-            </a>
           </div>
         </div>
       )}
