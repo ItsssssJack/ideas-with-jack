@@ -11,7 +11,7 @@ export const Features: React.FC = () => {
     },
     {
       icon: <FileText className="w-6 h-6" />,
-      title: 'Exclusive Insights',
+      title: "What's Actually Working",
       desc: "Real lessons from scaling businesses, staying ahead in tech, and building in public. The honest stuff I don't post on social media.",
       color: 'bg-purple-500/10 text-purple-400',
     },
@@ -32,7 +32,28 @@ export const Features: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">What You Get Every Week</h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">Three promises I make with every email I send</p>
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">Three promises I make with every email I send</p>
+
+          {/* Jack's headshot */}
+          <div className="flex justify-center mb-8 mt-2">
+            <div className="relative group/avatar">
+              {/* Outer yellow glow */}
+              <div className="absolute inset-0 bg-yellow-500/20 rounded-full blur-2xl" />
+
+              <img
+                src="/jack profile .png"
+                alt="Jack Roberts"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl group-hover/avatar:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Visual separator dots */}
+          <div className="flex justify-center gap-2 mb-14">
+            <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/60" />
+            <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/40" />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
